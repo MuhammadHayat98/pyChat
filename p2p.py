@@ -6,7 +6,7 @@ class Server:
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     connections = []
     def __init__(self):
-        self.sock.bind(('0.0.0.0',1000))
+        self.sock.bind(('0.0.0.0',10000))
         self.sock.listen(1)
     def handler(self,c,a):
         while True:
